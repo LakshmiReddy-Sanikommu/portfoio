@@ -29,6 +29,13 @@ const ProjectCard = ({ project, index }) => {
     card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
   };
 
+  const getImagePath = (path) => {
+    if (!path) return '';
+    if (path.startsWith('http')) return path;
+    const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
+
   return (
     <div
       ref={cardRef}
@@ -39,7 +46,7 @@ const ProjectCard = ({ project, index }) => {
     >
       <div className="project-image-container">
         {project.image ? (
-          <img src={project.image} alt={project.title} className="project-image" />
+          <img src={getImagePath(project.image)} alt={project.title} className="project-image" />
         ) : (
           <div className="project-image-placeholder"></div>
         )}

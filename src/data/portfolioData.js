@@ -78,7 +78,7 @@ export const portfolioData = {
       title: "POS Management System",
       tech: "React.js, Spring Boot, MySQL",
       description: "Developed a robust full-stack POS and inventory management system to streamline retail operations and staff administration. Built with a Java/Spring Boot backend secured by JWT authentication and a responsive React.js frontend styled with Tailwind CSS. The application features real-time transaction processing with barcode support, automated inventory and service tracking, and sophisticated role-based access controls. Leveraged RESTful APIs and MySQL for scalable, production-grade data persistence.",
-      image: "POS.png",
+      image: "/POS.png",
       link: "https://github.com/LakshmiReddy-Sanikommu/POS-Management"
     },
     {
@@ -92,7 +92,7 @@ export const portfolioData = {
       title: "Student Management System",
       tech: "Java, File I/O, MongoDB",
       description: "A modern, full-stack student management application built with Java Spring Boot and plain JavaScript that features secure, role-based dashboards for students and lecturers to seamlessly manage coursework, track assignment progress, and update profiles through a responsive, modern interface.",
-      image: "SM.png",
+      image: "/SM.png",
       link: "https://github.com/LakshmiReddy-Sanikommu/StudentManagementSystem"
     }
   ]

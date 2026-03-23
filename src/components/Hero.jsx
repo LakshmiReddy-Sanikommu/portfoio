@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="hero-image reveal" style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center', transitionDelay: '0.2s' }}>
         <div style={{ position: 'relative', width: '100%', maxWidth: '450px', aspectRatio: '1/1', borderRadius: '50%', background: 'var(--glass-bg)', border: '2px solid var(--glass-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}>
           <img
-            src="/avatar.png"
+            src={`${import.meta.env.BASE_URL}avatar.png`}
             alt="Avatar"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             onError={(e) => {
